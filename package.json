@@ -1,0 +1,28 @@
+{
+  "name": "todo-list-sql",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tasks.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jcelder/todo-list-sql.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jcelder/todo-list-sql/issues"
+  },
+  "homepage": "https://github.com/jcelder/todo-list-sql#readme",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1",
+    "pg": "^7.3.0"
+  }
+}
