@@ -9,7 +9,6 @@ const client = new Client({
 })
 
 const accessDB = (query) => {
-  let returnData;
   client.connect()
 
   return client.query(query)
