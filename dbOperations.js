@@ -10,7 +10,6 @@ const client = new Client({
 
 const accessDB = (query) => {
   client.connect()
-
   return client.query(query)
     .then((result) => {
       client.end()
