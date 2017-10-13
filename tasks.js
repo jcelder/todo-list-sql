@@ -1,12 +1,13 @@
 #!/usr/local/bin/node
+const exec = require('child_process').exec
 
-const command = process.argv[2]
-const task = process.argv.slice(3).join(' ')
 const list = require('./commands/list').list
 const add = require('./commands/add').add
 const remove = require('./commands/delete').remove
 const complete = require('./commands/complete').complete
 
+const command = process.argv[2]
+const task = process.argv.slice(3).join(' ')
 
 switch (command) {
   case 'list':
@@ -25,5 +26,8 @@ switch (command) {
     remove(task)
     break;
   default:
-    console.log('Test')
+    console.log(
+      `USAGE:
+        INVALID COMMAND ENTERED`
+    )
 }
