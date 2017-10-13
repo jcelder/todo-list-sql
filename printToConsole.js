@@ -6,7 +6,7 @@ const printToConsole = (arr) => {
   arr.forEach((task) => {
     console.log(`${task.id}  ${task.task}`)
   })
-  console.log(`\nYou have ${arr.length} tasks`)
+  console.log(`\nYou have ${arr.length} tasks.`)
 }
 
 module.exports = { printToConsole }
